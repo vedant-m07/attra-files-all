@@ -378,12 +378,11 @@
   </div>
 </section>
 
-<!-- ═══════════ TRANSITION light → dark ═══════════ -->
+<!-- ═══ DARK ZONE — single background so grid is seamless ═══ -->
+<div class="checker-dark">
 
-<!-- ═══════════════════════════ DARK HALF ═══════════════════════════ -->
-
-<!-- FEATURE 1: Magic Inbox (dark) -->
-<section id="features" class="checker-dark py-32 px-6">
+<!-- FEATURE 1: Magic Inbox -->
+<section id="features" class="py-32 px-6">
   <div class="max-w-6xl mx-auto">
     <div class="text-center mb-20">
       <p class="text-[10px] uppercase tracking-[0.3em] font-bold text-white/40 mb-4" data-i18n="feat_label">Built for small businesses</p>
@@ -506,7 +505,7 @@
 </section>
 
 <!-- MORNING BRIEFING — gradient on dark checker -->
-<section class="checker-dark py-32 px-6 relative overflow-hidden">
+<section class="py-32 px-6 relative overflow-hidden">
   <div class="absolute inset-0 pointer-events-none">
     <div class="orb-1 absolute top-0 left-1/4 w-[600px] h-[300px] rounded-full bg-primary/10 blur-[120px]"></div>
     <div class="orb-2 absolute bottom-0 right-1/4 w-[500px] h-[300px] rounded-full bg-purple-500/8 blur-[120px]"></div>
@@ -520,7 +519,7 @@
 </section>
 
 <!-- HOW IT WORKS — dark checker -->
-<section id="how" class="checker-dark py-32 px-6">
+<section id="how" class="py-32 px-6">
   <div class="max-w-5xl mx-auto">
     <div class="text-center mb-20">
       <p class="text-[10px] uppercase tracking-[0.3em] font-bold text-white/30 mb-4" data-i18n="how_label">No IT guy needed</p>
@@ -546,8 +545,8 @@
   </div>
 </section>
 
-<!-- TESTIMONIALS — dark checker -->
-<section class="checker-dark py-32 px-6">
+<!-- TESTIMONIALS + PRICING -->
+<section class="pt-32 pb-32 px-6">
   <div class="max-w-6xl mx-auto">
     <div class="text-center mb-16">
       <p class="text-[10px] uppercase tracking-[0.3em] font-bold text-white/30 mb-4" data-i18n="testi_label">Early users</p>
@@ -580,11 +579,11 @@
       </div>
     </div>
   </div>
-</section>
 
-<!-- ═══════════ TRANSITION dark → light ═══════════ -->
+</section><!-- /testimonials -->
 
-<!-- ═══════════════════════════ LIGHT HALF AGAIN ═══════════════════════════ -->
+</div><!-- /dark zone -->
+
 
 <!-- FAQ -->
 <section id="faq" class="checker-light py-32 px-6">
@@ -651,6 +650,109 @@
     </div>
   </div>
 </section>
+
+<!-- LAUNCH OFFER / PRICING -->
+<section id="pricing" class="checker-dark py-32 px-6 relative overflow-hidden">
+  <div class="absolute inset-0 pointer-events-none overflow-hidden">
+    <div class="orb-1 absolute top-[-100px] left-1/2 -translate-x-1/2 w-[700px] h-[400px] rounded-full bg-primary/20 blur-[120px]"></div>
+    <div class="orb-2 absolute bottom-[-80px] right-[-100px] w-[500px] h-[400px] rounded-full bg-[#2e86ff]/15 blur-[100px]"></div>
+  </div>
+
+  <div class="relative max-w-4xl mx-auto text-center">
+
+    <!-- Badge -->
+    <div class="inline-flex items-center gap-2 bg-primary/20 border border-primary/40 text-[#60a8ff] text-xs font-semibold uppercase tracking-widest px-4 py-2 rounded-full mb-8">
+      <span class="w-2 h-2 rounded-full bg-[#60a8ff] animate-pulse"></span>
+      <span data-i18n="price_badge">Limited Early-Access Offer</span>
+    </div>
+
+    <!-- Headline -->
+    <h2 class="serif text-4xl md:text-5xl font-semibold text-white leading-tight mb-4" data-i18n-html="price_h2">
+      Start now. Pay less.<br/>
+      <span class="gradient-text">Save €80 in your first two months.</span>
+    </h2>
+    <p class="text-[#a0aec0] text-lg mb-12 max-w-xl mx-auto" data-i18n="price_sub">
+      Lock in early-access pricing before the campaign closes — regular price goes live on April 19th.
+    </p>
+
+    <!-- Countdown -->
+    <div class="flex justify-center gap-4 mb-14" id="countdown-wrap">
+      <div class="flex flex-col items-center bg-white/5 border border-white/10 rounded-2xl px-5 py-4 min-w-[80px]">
+        <span class="text-4xl font-bold text-white tabular-nums leading-none" id="cd-days">00</span>
+        <span class="text-[10px] uppercase tracking-widest text-[#6b7a99] mt-2" data-i18n="cd_days">Days</span>
+      </div>
+      <div class="flex flex-col items-center bg-white/5 border border-white/10 rounded-2xl px-5 py-4 min-w-[80px]">
+        <span class="text-4xl font-bold text-white tabular-nums leading-none" id="cd-hours">00</span>
+        <span class="text-[10px] uppercase tracking-widest text-[#6b7a99] mt-2" data-i18n="cd_hours">Hours</span>
+      </div>
+      <div class="flex flex-col items-center bg-white/5 border border-white/10 rounded-2xl px-5 py-4 min-w-[80px]">
+        <span class="text-4xl font-bold text-white tabular-nums leading-none" id="cd-mins">00</span>
+        <span class="text-[10px] uppercase tracking-widest text-[#6b7a99] mt-2" data-i18n="cd_mins">Minutes</span>
+      </div>
+      <div class="flex flex-col items-center bg-white/5 border border-white/10 rounded-2xl px-5 py-4 min-w-[80px]">
+        <span class="text-4xl font-bold text-white tabular-nums leading-none" id="cd-secs">00</span>
+        <span class="text-[10px] uppercase tracking-widest text-[#6b7a99] mt-2" data-i18n="cd_secs">Seconds</span>
+      </div>
+    </div>
+
+    <!-- Pricing card -->
+    <div class="relative mx-auto max-w-md bg-gradient-to-b from-white/10 to-white/5 border border-white/15 rounded-3xl p-8 shadow-2xl mb-10 overflow-hidden">
+      <div class="absolute top-0 right-0 bg-primary text-white text-[10px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-bl-2xl rounded-tr-3xl" data-i18n="price_ribbon">
+        Early access
+      </div>
+      <div class="flex items-end justify-center gap-4 mb-2">
+        <div class="text-center">
+          <span class="text-[#6b7a99] text-sm line-through">€59/mo</span>
+          <p class="text-[#6b7a99] text-[10px] uppercase tracking-wide" data-i18n="price_regular_label">Regular</p>
+        </div>
+        <span class="text-[#6b7a99] text-xl mb-4">→</span>
+        <div class="text-center">
+          <span class="text-5xl font-bold text-white">€19</span><span class="text-xl text-[#a0aec0]">/mo</span>
+          <p class="text-[#60a8ff] text-[10px] uppercase tracking-wide font-semibold mt-1" data-i18n="price_duration">First 2 months</p>
+        </div>
+      </div>
+      <p class="text-[#6b7a99] text-sm mb-6" data-i18n="price_includes">Includes 2 seats · Full access · No contracts</p>
+      <div class="bg-primary/20 border border-primary/30 rounded-xl px-4 py-3 mb-7 text-sm text-[#60a8ff] font-medium" data-i18n-html="price_savings">
+        You save <strong class="text-white">€80</strong> compared to regular pricing over the first 2 months
+      </div>
+      <a href="#waitlist"
+         class="block w-full text-center bg-primary hover:bg-[#0046a0] active:scale-95 transition-all duration-200 text-white font-semibold text-base rounded-xl py-4 shadow-lg shadow-primary/30" data-i18n="price_cta">
+        Book a Free Call — Claim Offer
+      </a>
+      <p class="text-[#4a5568] text-xs mt-3" data-i18n="price_expires">Offer expires April 19, 2026 · No credit card required</p>
+    </div>
+
+    <p class="text-[#4a5568] text-sm" data-i18n-html="price_fine">
+      After the first 2 months, billing continues at the standard <strong class="text-[#6b7a99]">€59/month</strong> — cancel any time.
+    </p>
+  </div>
+</section>
+
+<script>
+(function() {
+  var deadline = new Date('2026-04-19T23:59:59');
+  function pad(n) { return String(n).padStart(2, '0'); }
+  function tick() {
+    var now = new Date();
+    var diff = deadline - now;
+    if (diff <= 0) {
+      document.getElementById('countdown-wrap').innerHTML =
+        '<p class="text-[#60a8ff] font-semibold text-lg">This offer has ended.</p>';
+      return;
+    }
+    var days  = Math.floor(diff / 864e5);
+    var hours = Math.floor((diff % 864e5) / 36e5);
+    var mins  = Math.floor((diff % 36e5) / 6e4);
+    var secs  = Math.floor((diff % 6e4) / 1e3);
+    document.getElementById('cd-days').textContent  = pad(days);
+    document.getElementById('cd-hours').textContent = pad(hours);
+    document.getElementById('cd-mins').textContent  = pad(mins);
+    document.getElementById('cd-secs').textContent  = pad(secs);
+  }
+  tick();
+  setInterval(tick, 1000);
+})();
+</script>
 
 <!-- FINAL CTA -->
 <section id="waitlist" class="checker-light py-40 px-6 relative overflow-hidden">
@@ -898,6 +1000,22 @@
       footer_privacy: 'Privacy',
       footer_terms: 'Terms',
       footer_copy: '© 2025 ATTRA. All rights reserved.',
+
+      price_badge: 'Limited Early-Access Offer',
+      price_h2: 'Start now. Pay less.<br/><span class="gradient-text">Save €80 in your first two months.</span>',
+      price_sub: 'Lock in early-access pricing before the campaign closes — regular price goes live on April 19th.',
+      cd_days: 'Days',
+      cd_hours: 'Hours',
+      cd_mins: 'Minutes',
+      cd_secs: 'Seconds',
+      price_ribbon: 'Early access',
+      price_regular_label: 'Regular',
+      price_duration: 'First 2 months',
+      price_includes: 'Includes 2 seats · Full access · No contracts',
+      price_savings: 'You save <strong class="text-white">€80</strong> compared to regular pricing over the first 2 months',
+      price_cta: 'Book a Free Call — Claim Offer',
+      price_expires: 'Offer expires April 19, 2026 · No credit card required',
+      price_fine: 'After the first 2 months, billing continues at the standard <strong class="text-[#6b7a99]">€59/month</strong> — cancel any time.',
     },
 
     fi: {
@@ -1022,6 +1140,22 @@
       footer_privacy: 'Tietosuoja',
       footer_terms: 'Käyttöehdot',
       footer_copy: '© 2025 ATTRA. Kaikki oikeudet pidätetään.',
+
+      price_badge: 'Rajoitettu varhaisen pääsyn tarjous',
+      price_h2: 'Aloita nyt. Maksa vähemmän.<br/><span class="gradient-text">Säästä €80 ensimmäisten kahden kuukauden aikana.</span>',
+      price_sub: 'Lukitse varhaisen pääsyn hinta ennen kampanjan päättymistä — normaalihinta astuu voimaan 19. huhtikuuta.',
+      cd_days: 'Päivää',
+      cd_hours: 'Tuntia',
+      cd_mins: 'Minuuttia',
+      cd_secs: 'Sekuntia',
+      price_ribbon: 'Varhainen pääsy',
+      price_regular_label: 'Normaalihinta',
+      price_duration: 'Ensimmäiset 2 kuukautta',
+      price_includes: 'Sisältää 2 käyttäjää · Täydet ominaisuudet · Ei sopimuspakkoa',
+      price_savings: 'Säästät <strong class="text-white">€80</strong> normaalihintaan verrattuna ensimmäisten 2 kuukauden aikana',
+      price_cta: 'Varaa ilmainen puhelu — lunasta tarjous',
+      price_expires: 'Tarjous päättyy 19.4.2026 · Ei luottokorttia tarvita',
+      price_fine: 'Kahden ensimmäisen kuukauden jälkeen laskutus jatkuu normaalilla <strong class="text-[#6b7a99]">59 €/kk</strong> hinnalla — peruuta koska tahansa.',
     }
   };
 
